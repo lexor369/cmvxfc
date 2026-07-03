@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CMV - Premium Live Sports Broadcast Directory.">
+    <title>CMV // Live Sports Directory</title>
+    
+    <!-- Adcash Monetization Library (Integrated high in head per Screenshot_20260702_134216_Chrome.jpg) -->
+    <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+    <script type="text/javascript">
+        aclib.runPop({
+            zoneId: '11551226',
+        });
+    </script>
+    
+    <!-- Google Fonts for Premium Sports Media Aesthetic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cmv-navbar">
+        <div class="cmv-container nav-wrapper">
+            <a href="index.html" class="cmv-logo">CMV<span class="brand-dot">.</span></a>
+            <nav class="cmv-nav-menu">
+                <a href="index.html" class="nav-link active">Hub</a>
+                <a href="https://telegram.me/+NSqV0ZHy3flhZmQ1" target="_blank" rel="noopener noreferrer" class="btn-cmv-primary">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+                    <span>JOIN TELEGRAM</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cmv-container wrapper-spacing">
+        <section class="directory-hero">
+            <h1 class="hero-title">LIVE &amp; UPCOMING<br>EVENTS</h1>
+            <p class="hero-subtitle">Real-time dynamic tracking and premium stream directory indexing powered by CMV.</p>
+        </section>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All Events</button>
+            <button class="filter-btn" data-filter="live">Live Now</button>
+            <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+        </div>
+
+        <section class="grid-showcase">
+            <div id="cmvGridLoader" class="loader-element">Fetching secure transmission metrics...</div>
+            <div id="cmvGridTarget" class="cmv-dynamic-grid hidden"></div>
+        </section>
+    </main>
+
+    <footer class="cmv-footer">
+        <div class="cmv-container footer-inner">
+            <p>&copy; 2026 CMV Media Corp. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
+
