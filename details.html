@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMV Portal // Live Broadcast Terminal</title>
+    
+    <!-- Adcash Monetization Library (Integrated high in head per Screenshot_20260702_134216_Chrome.jpg) -->
+    <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+    <script type="text/javascript">
+        aclib.runPop({
+            zoneId: '11551226',
+        });
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Video Player Streaming Engine Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/shaka-player@5.1.10/dist/shaka-player.ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shaka-player@5.1.10/dist/controls.min.css">
+</head>
+<body>
+    <header class="cmv-navbar">
+        <div class="cmv-container nav-wrapper">
+            <a href="index.html" class="cmv-logo">CMV<span class="brand-dot">.</span></a>
+            <a href="index.html" class="btn-cmv-secondary">← Return to Hub</a>
+        </div>
+    </header>
+
+    <main class="cmv-container wrapper-spacing">
+        <div id="detailError" class="error-card hidden">Specified stream terminal offline or profile mapping corrupt.</div>
+        
+        <div id="detailContainer">
+            <div class="detail-header-meta">
+                <div class="meta-row">
+                    <span id="detailBadge" class="status-badge-pill">Syncing...</span>
+                    <span id="detailComp" class="meta-competition-txt">League Specification</span>
+                </div>
+                <h1 id="detailTitle" class="meta-title-heading">Analyzing Stream Telemetry...</h1>
+                <p id="detailTime" class="meta-timestamp-txt"></p>
+            </div>
+
+            <div class="video-container-frame">
+                <div class="video-wrapper shaka-video-container" id="videoContainer" data-shaka-player-container>
+                    <video id="videoPlayer" playsinline autoplay class="shaka-video"></video>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="cmv-footer">
+        <div class="cmv-container">
+            <p>&copy; 2026 CMV Streaming Systems Wire.</p>
+        </div>
+    </footer>
+
+    <script src="details.js" type="module"></script>
+</body>
+</html>
+
